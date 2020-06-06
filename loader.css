@@ -1,0 +1,34 @@
+body {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh !important;
+}
+.loader {
+  display: flex;
+}
+.loader > span {
+  background-color: purple;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-bottom: 0px;
+
+  animation: bounce 0.5s infinite alternate;
+}
+.loader > span:nth-child(2) {
+  background-color: pink;
+  animation-delay: 1s;
+}
+.loader > span:nth-child(3) {
+  background-color: palevioletred;
+  animation-delay: 2s;
+}
+@keyframes bounce {
+  to {
+    margin-right: 5px;
+    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+  }
+}
